@@ -76,9 +76,9 @@
                         <div class="ltn__checkout-single-content mt-50">
                             <h4 class="title-2">Billing Details</h4>
 
-                             {{% for flash_error in app.flashes('verify_email_error') %}}
+                             {% for flash_error in app.flashes('verify_email_error') %}
                                    <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-                             {{% endfor %}}
+                             {% endfor %}
                             <div class="ltn__checkout-single-content-info">
                             {{ render(
                                         controller( 
