@@ -42,6 +42,8 @@ class RegistrationController extends AbstractController
                 )
             );
 
+            $user->setRegistredAt(new \DateTimeImmutable('now'));
+
             $entityManager->persist($user);
             $entityManager->flush();
 
